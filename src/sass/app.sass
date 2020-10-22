@@ -1,0 +1,457 @@
+// done by riverco.de
+@import "node_modules/bootstrap/scss/bootstrap"
+@import helpers/index
+@import generated/sprite-svg
+@import generated/index
+@import base/index 
+@import lib/index
+@import common
+@import components/index
+@import containers/index
+@import pages/main
+@import pages/index
+
+.mod-line
+    width: 100%
+    background-color: #FAFAFA
+    p
+        padding:  37px 0
+        font-weight: 600
+        font-size: 16px
+        line-height: 24px
+        text-align: center
+        letter-spacing: 1px
+        color: #362320
+#modal-login
+    max-width: 1056px !important
+    margin: 1.75rem auto
+    
+.close-mod
+    width: 40px
+    height: 40px
+    background-color: #F25C05
+    position: absolute
+    right: 0px
+    img
+        width: 14px
+        height: 14px
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+
+.con-login
+    width: 100%
+    display: flex
+    padding: 60px
+    background-color: #ffff
+    +r(415)
+        padding: 25px   
+    +r(970)
+        flex-direction: column
+   
+    
+    &__l,&__r
+        width: 49.5%
+        +r(970)
+            width: 100%
+            justify-content: center
+            padding: 60px 0 !important
+        +r(515)
+            padding: 25px 0 !important    
+    &__l
+        padding-right: 60px
+        .mcl-title
+            font-style: normal
+            font-weight: 600
+            font-size: 30px
+            line-height: 38px
+            letter-spacing: 1px
+            color: #382522
+        .mcl-subtitle
+            width: 70%
+            font-size: 14px
+            line-height: 26px
+            letter-spacing: 0.5px
+            color: #493C3A
+            text-shadow: 0px 5px 37px rgba(255, 255, 255, 0.50201)
+            margin:  20px 0
+        .mcl__btn
+            button
+                width: 100%
+                +r(415)
+                    padding: 15px 32px !important
+    &__r
+        padding-left: 60px
+        .foget
+            width: 100%
+            display: flex
+            justify-content: center
+            a
+                text-align: center
+                font-weight: normal
+                font-size: 14px
+                line-height: 17px
+                text-decoration-line: underline
+                color: #F25C05
+                
+
+        .mcr-title
+            font-style: normal
+            font-weight: 600
+            font-size: 30px
+            line-height: 38px
+            letter-spacing: 1px
+            color: #382522
+            text-align: center
+            margin-bottom: 30px
+        .input-wrapper
+            width: 100%
+            padding-bottom: 30px
+            input
+                width: 100%
+                margin-bottom: 30px    
+        .mcr__btn
+            button
+                width: 100%
+                margin-bottom: 20px
+    &__hr
+        width: 2px
+        // height: 100%
+        background-color: rgba(54, 35, 32, 0.1)    
+// #filter
+//     .out-side
+//         float: left
+// #modal-filter
+//     float: right !important
+//     max-width: 100% !important
+//     margin: 0px !important
+//     background-color: #fff
+//     height: 100% !important
+//     width: 70%
+    
+// .out-side
+//     width: 30%
+//     height: 100%
+
+.open-filer
+    z-index: 99999!important
+    opacity: 1 !important
+    display: block !important
+    transition: opacity 0.5s ease
+    // visibility: visible
+
+.fliter-mob
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0px
+    z-index: -1
+    opacity: 0
+    // display: none
+    // visibility: hidden
+    // transition: opacity 0.5s ease
+   
+    &__out
+        width: 30%
+        z-index: 99 !important
+        float: left
+        height: 100%
+        background-color: #000
+        opacity: 0.5
+        +r(380)
+            width: 20%
+    &__main
+        width: 70%    
+        z-index: 999999 !important
+        background-color: #ffffff
+        float: left
+        height: 100%
+        opacity: 1 !important
+        padding-left: 20px
+        +r(380)
+            width: 80% 
+        .fliter-title
+            display: flex
+            align-items: center
+            height: 40px
+            font-weight: 600
+            font-size: 14px
+            line-height: 17px
+            letter-spacing: 1px
+            color: #362320
+            margin-bottom: 35px
+
+
+.fliter_button
+    display: flex
+    flex-direction: column
+    align-items: center
+    .myBtn
+        max-width: 215px
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        letter-spacing: 1.5px
+        color: #FFFFFF
+        text-shadow: 0px 5px 37px rgba(255, 255, 255, 0.50201)
+        padding: 15px 17px !important 
+    a
+        font-weight: 500
+        font-size: 14px
+        line-height: 24px
+        letter-spacing: 1px
+        color: #362320
+        margin-bottom: 12px
+
+.myFilter
+    
+    #collapseOne,#collapse4,#collapse5
+        li
+            padding:  10px  0 !important
+            a
+                font-weight: 500
+                font-size: 14px
+                line-height: 28px
+                letter-spacing: 1px
+                color: #382522 
+    #collapse2
+        .of2
+            width: 180px !important
+            padding: 25px 15px 15px 15px
+            a
+                display: flex
+                justify-content: center
+                font-size: 14px
+                line-height: 17px
+                text-decoration-line: underline !important
+                color: #F25C05
+                text-align: center
+                margin-top: 20px
+            .min
+                margin-bottom: 10px
+            .min,.max
+                display: flex
+                position: relative
+                font-weight: 500
+                font-size: 14px
+                line-height: 20px
+                letter-spacing: 1px
+                color: #382522
+                align-items: center
+                justify-content: space-between
+                span
+                    position: absolute
+                    right: 1px
+                    top: 50%
+                    transform: translate(0,-50%)
+                    background-color: #fff
+                    height: 40px 
+                    width: 50px
+                    display: flex
+                    align-items: center
+            input
+                border: 1px solid black
+                width: 109px
+                height: 46px 
+                padding-left: 10px
+    #collapse3
+        .of3
+            width: 180px !important
+            padding: 33px 28px
+            a
+                font-size: 14px
+                line-height: 17px
+                color: #362320 
+                border: 1px solid #362320
+                padding: 17px
+                display: flex
+                flex-wrap: wrap
+                width: 40%   
+                float: left 
+                margin-left: 10%
+                margin-bottom: 10%
+                transition: all 0.5s ease 
+                &:nth-child(2n+1)   
+                    margin-left: 0px !important          
+                &:hover
+                    color: #F25C05 
+                    border: 1px solid #F25C05
+                    transition: all 0.5s ease     
+    .card
+        .open-filter
+            .sort
+                width: 100%
+                display: flex
+                justify-content: space-between
+                padding-right: 10px
+                align-items: center
+                background-color: none
+                font-weight: 500
+                font-size: 14px
+                line-height: 38px
+                letter-spacing: 1px
+                color: #382522
+                img
+                    width: 15px
+                    height: 15px
+                 
+        .active-tab
+            background-color: inherit !important                
+            .sort
+                position: relative
+                &::before
+                    content: ' '
+                    width: calc( 100% - 10px )
+                    height: 1px 
+                    background-color:  #F25C05
+                    position: absolute
+                    bottom: 0px
+                img
+                    transform: rotate(180deg)
+            
+        .collapsed
+            .sort
+                &::before
+                    content: ' '
+                    width: calc( 100% - 10px )
+                    height: 0px  
+                    background-color: #ffffff
+                    position: absolute
+                    bottom: 0px  
+                img
+                    transform: rotate(0deg) !important
+
+
+#modal-item
+    max-width: 990px
+
+
+
+
+           
+.modal
+    padding-left: 15px !important
+    padding-right: 15px !important
+
+.item-buym
+    padding: 60px 
+    +r(950)
+        padding: 30px !important 
+          
+    &__title
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
+        letter-spacing: 1px
+        color: #382522
+        margin-bottom: 30px
+    &__end
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        +r(650)
+            flex-direction: column-reverse !important
+        a
+            font-weight: 500
+            font-size: 14px
+            line-height: 24px
+            letter-spacing: 1px
+            color: #362320
+            +r(650)
+                margin-top: 22px
+            img
+                margin-right: 20px
+    &__sum
+        display: flex
+        justify-content: flex-end
+        align-items: flex-end
+        div
+            display: flex
+            align-items: flex-end
+            margin-bottom: 25px
+            font-weight: 600
+            font-size: 16px
+            line-height: 20px
+            color: #493C3A
+            +r(650)
+                flex-direction: column
+                align-items: flex-start
+            p
+                font-weight: 600
+                font-size: 30px
+                margin-left: 15px
+                +r(650)
+                    margin-left: 0px
+                    margin-top: 15px
+    .pirs-btn
+        display: flex
+        justify-content: flex-start
+        .size-btn
+            margin-right: 15px
+        .size-btn:last-child
+            margin-right: 0px !important          
+    .like-items   
+        &__photo
+            width: 30% !important
+            img
+                width: 100% !important
+        &__info
+            width: 70% !important  
+        &__promo
+         
+            .pline-text
+                font-size: 14px
+                line-height: 17px
+                color: #493C3A
+                margin-bottom: 15px !important
+                span
+                    font-size: 12px
+                    line-height: 15px
+                    color: #A69794
+            .pinput
+                display: flex
+                align-items: center
+                .input-wrapper
+                    input,label
+                        background-color: #fafafa
+                a   
+                    margin-left: 16px
+                    font-size: 14px
+                    line-height: 17px
+                    text-decoration-line: underline !important
+                    color: #F25C05
+        +r(933)
+            display: none
+    .item-mob
+        display: none   
+        +r(933)
+            display: block           
+        .prof-order__items
+            min-height: 150px !important
+            +r(933)
+                padding: 0px !important
+            &_l
+                height: auto !important
+                img
+                    width: auto !important
+                    height: 158px !important
+                    +r(390)
+                        height: 100px !important
+            .pror-order-line3
+                align-self: flex-end
+                p
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 20px
+                    color: #362320
+    .product-item__r__size
+        .pirs-btn
+            justify-content: flex-start
+            .size-btn
+                button
+                    width: 39px !important
+                    height: 31px !important
+                    margin-right: 7px !important

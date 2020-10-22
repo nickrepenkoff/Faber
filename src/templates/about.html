@@ -1,0 +1,24 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{# mixin example #}
+	{% include "partials/home/_header.html" %}		
+	{% include "partials/about/_about-comp.html" %}	
+	{% include "partials/about/_target.html" %}	
+	{% include "partials/about/_why.html" %}	
+	{% include "partials/about/_people.html" %}	
+	{% include "partials/about/_optovic.html" %}	
+	{% include "partials/about/_doc.html" %}	
+	{% include "partials/home/_brand.html" %}	
+
+	{% include "partials/home/_block-contact.html" %}	
+	{% include "partials/_footer.html" %}
+{% endblock %}
+
+	
+
+
